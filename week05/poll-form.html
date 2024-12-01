@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WDD130 | Ethan Miles | User Poll HTML Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
-    <header>
-        <h1>WDD130 | Ethan Miles | HTML Form - User Poll</h1>
+    <header class="roboto-bold-italic">
+        <h1>WDD130 | HTML Form - User Poll</h1>
     </header>
     <main>
         <form>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname"><br>
-                <label for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail"><br>
+            <fieldset class="roboto-regular">
+                <legend class="roboto-medium">Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname"><br>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail"><br>
+                </div>
             </fieldset>
-            <fieldset>
-                <legend>Questions</legend>
-                <label for="browser">What is your favorite internet browser?</label>
-                <select name="browser" id="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Microsoft Edge</option>
-                    <option value="other">Other</option>
-                </select><br>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet"><br>
-                <label for="feedback">List the places you have lived:</label>
+            <fieldset class="roboto-regular">
+                <legend class="roboto-medium">Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Microsoft Edge</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet"><br>
+                </div>
+                <label for="feedback" class="feed">List the places you have lived:</label>
                 <textarea name="feedback" id="feedback" rows="4" placeholder="Colorado Springs CO, Provo UT, Highland UT"></textarea>
             </fieldset>
-            <button type="submit">Submit Poll</button>
+            <button type="submit" class="roboto-regular">Submit Poll</button>
         </form>
     </main>
     <footer>
