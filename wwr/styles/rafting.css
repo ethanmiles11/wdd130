@@ -144,14 +144,14 @@ header nav a:hover {
 }
 
 figure {
-    border: thin #c0c0c0 solid;
+    border: thin white solid;
     display: flex;
     flex-flow: column;
     margin: 0;
 }
 
 figcaption {
-    background-color: #19647E;
+    background-color: #941100;
     color: white;
     text-align: center;
     font: italic smaller sans-serif;
