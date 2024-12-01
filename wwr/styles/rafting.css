@@ -22,10 +22,6 @@
     font-style: normal;
 }
 
-.sociallinks a {
-    text-decoration: none;
-}
-
 div.hero {
     position: relative;
 }
@@ -66,4 +62,125 @@ article {
 #text {
     padding-left: 1em;
     color: white;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding-bottom: .65rem;
+    border-bottom: 1px solid #ccc;
+    align-items: stretch;
+}
+
+header img {
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    color: #941100;
+    font-size: 1.30rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #14110f;
+    font-weight: 650;
+}
+
+.history-lay {
+    display: grid;
+    margin: 1rem auto;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.history-lay img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.history-lay h2 {
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    font-size: 2.5rem;
+}
+
+#left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    margin: 0;
+}
+
+#right {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: center;
+    margin: 0;
+}
+
+.adgrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 70px 3fr;
+    margin: 2rem auto;
+}
+
+.adgrid h2 {
+    font-size: 3rem;
+    grid-row: 1/2;
+    grid-column: 1/6;
+    justify-self: center;
+    align-self: center;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+figcaption {
+    background-color: #19647E;
+    color: white;
+    text-align: center;
+    font: italic smaller sans-serif;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 9rem;
+    justify-content: space-around;
+    background: black;
+    margin-bottom: 0;
+}
+
+#foot {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/4;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.sociallinks {
+    grid-column-start: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sociallinks a {
+    text-decoration: none;
 }
