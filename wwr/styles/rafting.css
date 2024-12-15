@@ -439,3 +439,130 @@ div.tripshero a:hover {
 .tablerows {
     background-color: rgba(160, 172, 173, .4)
 }
+
+.homepagehero {
+    position: relative;
+    max-width: 1920px;
+    margin: 0;
+}
+
+.homepagehero img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.homepagehero h1 {
+    position: absolute;
+    top: 6.3rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    background-color: #14110f;
+}
+
+.homepagehero h2 {
+    position: absolute;
+    bottom: 26.5rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    background-color: #19647E;
+}
+
+.homepagehero a {
+    position: absolute;
+    bottom: 13.5rem;
+    left: 50%;
+    margin-left: -142.8px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: #941100;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.homepagegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 5.3rem;
+}
+
+.homepagegrid figure {
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    row-gap: 10px;
+}
+
+.homeimageactivity {
+    padding: 10px;
+    background-color: rgba(148, 17, 0, .9);
+    box-shadow: 0 0 10px #14110f;
+}
+
+.homepageform {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+    display: grid;
+    border: 1px solid black;
+    background-color: rgba(148, 17, 0, .9);
+    grid-template-rows: 1fr 100px;
+    border-radius: 1rem;
+    box-shadow: 0 0 14px #19647E;
+    grid-column: 5 / 7;
+    color: white;
+}
+
+.emailsignup {
+    margin: 1.5rem;
+    background-color: #14110f;
+    color: white;
+    font-size: 1rem;
+    justify-self: center;
+    width: 140px;
+    border: none;
+    border-radius: 0.15rem;
+    padding: 2px;
+}
+
+.emailsignup:hover {
+    background-color: #19647E;
+}
+
+.homepagenewsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.homepagenewsletter h3 {
+    grid-column: 5 / 7;
+    margin: 0 auto;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background-color: rgba(148, 17, 0, .9);
+    border-radius: 1rem;
+    box-shadow: 0 0 14px #19647E;
+    padding: 10px;
+    color: white;
+}
+
+.homepagenewsletter img {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    z-index: -1;
+}
